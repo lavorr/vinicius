@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Poker Night - Ranking</title>
+    <link rel="preload" href="./assets/fonts/Roboto-Regular-subset.woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/global.css">
+  </head>
+  <body>
+    <div class="section title">
+      <h1 style="grid-area:title">Projetinho</h1>
+    </div>
+    <div class="section ranking">
+      <h2>Ranking Sit&Go</h2>
+
+      <table style="grid-area:table">
+        <colgroup>
+          <col span="1" style="width: max-content;">
+          <col span="1" style="width: auto; margin-right: auto">
+          <col span="1" style="min-width: max-content;">
+          <col span="1" style="min-width: max-content;">
+        </colgroup>
+        <thead>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Faltas</th>
+        </thead>
+
+        <tbody>
+          <%
+          const competitors = {
+            'Vinicius': 0,
+            'Rafael': 0
+          }
+
+          const missedList = [
+            {
+              date: '15/04/2023',
+              competitors: ['Rafael']
+            },
+          ]
+
+          let amount = 0
+          for (let i = 0; i < missedList.length; i++) {
+            amount += missedList[i].competitors.length
+            for (const competitor of missedList[i].competitors) {
+              competitors[competitor]++
+            }
+          }
+
+          const competitorsSorted = Object.fromEntries(
+            Object.entries(competitors).sort(([,a],[,b]) => a-b)
+          )
+          Object.keys(competitorsSorted).forEach((item, idx) => { %>
+            <tr>
+              <td class="small ranking-pos ranking-pos-<%= (idx+1) %>"><%= idx+1 %></td>
+              <td class="ranking-name"><%= item %></td>
+              <td class="ranking-games"><%= competitorsSorted[item] %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <div>
+        <h3>Pote total: <%= amount %></h1>
+      </div>
+    </div>
+    <footer>
+      <p>© Vinicius, vai tomar no cu</p>
+    </footer>
+  </body>
+</html>
