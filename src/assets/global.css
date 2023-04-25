@@ -44,11 +44,11 @@ background-color: var(--coal-pure);
 body {
   background-image: url('https://img.freepik.com/fotos-gratis/homem-jovem-fitness-em-estudio_7502-5006.jpg?w=740&t=st=1682390153~exp=1682390753~hmac=02f2beaf8bf55c800be23ae0ccb879031d606fea826e286ea2e31d30a002f7cf');
   background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed ;
   font-size: 18px;
-    font-weight: bold;
-  text-align: left;
   padding-block-start: var(--space-l);
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 h1, h2 {
