@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-display: swap;
   src: url(./fonts/Roboto-Regular-subset.woff2) format('woff2');
   unicode-range: U+0-FF,U+131,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
 :root {
-  --coal-pure: #161616;
-  --cottom-pure: #fefefe;
-  --cottom-deep: #bebebe;
+  --coal-pure: #ffffff;
+  --cottom-pure: #ffffff;
+  --cottom-deep: #e0dddd;
 
   --accent-pale: #6af29e;
   --accent-deep: #19b3f3;
 
   --max-width: 910px;
-  --space-s: 8px;
+  --space-s: 100px;
   --space-m: 16px;
   --space-l: 24px;
   --space-xl: 32px;
@@ -31,7 +31,9 @@
 }
 
 html {
-  background-color: var(--coal-pure);
+background-image: url('https://img.freepik.com/fotos-gratis/homem-jovem-fitness-em-estudio_7502-5006.jpg?w=740&t=st=1682390153~exp=1682390753~hmac=02f2beaf8bf55c800be23ae0ccb879031d606fea826e286ea2e31d30a002f7cf');
+background-size: cover;
+background-color: var(--coal-pure);
   color: var(--body-color);
   font-size: 16px;
   line-height: 1.5;
@@ -39,16 +41,20 @@ html {
 }
 
 body {
+    font-size: 22px;
+    font-weight: bold;
+  text-align: left;
   padding-block-start: var(--space-l);
 }
 
 h1, h2 {
   color: var(--display-color);
-  line-height: 1.2;
+  line-height: 5.0;
 }
 
 h2 {
   font-size: 2.5rem;
+  
 }
 
 h1 {
@@ -57,13 +63,17 @@ h1 {
   background-image: linear-gradient(to right, var(--accent-pale), var(--accent-deep));
   color: transparent;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 5rem;
+  line-height: 0.9;
+  display: inline-block;
 }
 
 table {
-  width: 100%;
+  width: 55%;
   border-collapse: collapse;
   overflow-x: auto;
+  float: left;
+  margin-left: -180px;
 }
 td {
   border-block: var(--border);
