@@ -31,17 +31,18 @@
 }
 
 html {
+
 background-image: url('https://img.freepik.com/fotos-gratis/homem-jovem-fitness-em-estudio_7502-5006.jpg?w=740&t=st=1682390153~exp=1682390753~hmac=02f2beaf8bf55c800be23ae0ccb879031d606fea826e286ea2e31d30a002f7cf');
 background-size: cover;
 background-color: var(--coal-pure);
   color: var(--body-color);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
   text-align: left;
   padding-block-start: var(--space-l);
@@ -53,7 +54,7 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   
 }
 
@@ -63,17 +64,17 @@ h1 {
   background-image: linear-gradient(to right, var(--accent-pale), var(--accent-deep));
   color: transparent;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 0.9;
   display: inline-block;
 }
 
 table {
-  width: 55%;
+  width: 100%;
   border-collapse: collapse;
   overflow-x: auto;
   float: left;
-  margin-left: -180px;
+  margin-left: 0px;
 }
 td {
   border-block: var(--border);
@@ -140,6 +141,7 @@ h3 {
 }
 
 .row {
+  flex-direction: column;
   display: flex;
   gap: var(--space-m);
   align-items: center;
@@ -152,14 +154,14 @@ h3 {
 }
 
 .icon {
-  height: 44px;
-  width: 44px;
+  height: 32px;
+  width: 32px;
   display: inline-grid;
   place-items: center;
 }
 .icon > svg {
-  height: 22px;
-  width: 22px;
+  height: 16px;
+  width: 16px;
   fill: var(--cottom-pure);
 }
 .icon.small, .icon.small > svg {
@@ -198,7 +200,7 @@ h3 {
   gap: var(--space-l) var(--space-xl);
 }
 
-@media screen and (min-width: 780px) {
+@media only screen and (max-width: 600px) {
   body {
     padding-block-start: var(--space-xxxl);
   }
