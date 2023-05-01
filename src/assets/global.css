@@ -8,6 +8,7 @@
 }
 
 :root {
+  
   --coal-pure: #ffffff;
   --cottom-pure: #ffffff;
   --cottom-deep: #e0dddd;
@@ -62,7 +63,8 @@ h2 {
 }
 
 h1 {
-  -webkit-background-clip: text;
+  
+-webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(to right, var(--accent-pale), var(--accent-deep));
   color: transparent;
@@ -82,7 +84,7 @@ table {
 td {
   border-block: var(--border);
   padding: var(--space-l) var(--space-s);
-}
+  }
 
 .ranking-pos,
 .ranking-name,
@@ -254,7 +256,12 @@ footer {
 
 .ranking-pos-1 {
   background-color: gold;
+  background-image: url('https://m.media-amazon.com/images/I/51xWC5bj+6L._AC_SX425_.jpg');
+  background-size: 70px 90px;
+  background-position: left; /* centralize a imagem vertical e horizontalmente */
+  background-repeat: no-repeat; /* evite a repetição da imagem */
 }
+
 
 .ranking-pos-2 {
   background-color: silver;
