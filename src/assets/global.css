@@ -256,7 +256,7 @@ footer {
 
 .ranking-pos-1 {
   background-color: gold;
-  background-image: url('https://m.media-amazon.com/images/I/51xWC5bj+6L._AC_SX425_.jpg');
+  /*background-image: url('https://m.media-amazon.com/images/I/51xWC5bj+6L._AC_SX425_.jpg');
   background-size: 70px 80px;
   background-position: left; /* centralize a imagem vertical e horizontalmente */
   background-repeat: no-repeat; /* evite a repetição da imagem */
