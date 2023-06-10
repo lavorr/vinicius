@@ -32,7 +32,7 @@
             'Maka': 0,
             'Karina': 0 ,
             'Matheus': 0,
-            'Ricardo': 0, 
+            'Ricardo': 0,
             'Jean': 0,
             'Raissa':0,
           }
@@ -64,6 +64,7 @@
           for (let i = 0; i < missedList.length; i++) {
             amount += missedList[i].competitors.length
             amount = amount + (missedList[i].competitors.length*3)
+
             for (const competitor of missedList[i].competitors) {
               competitors[competitor]++
             }
