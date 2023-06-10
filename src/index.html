@@ -63,6 +63,7 @@
           let amount = 0
           for (let i = 0; i < missedList.length; i++) {
             amount += missedList[i].competitors.length
+            amount = amount + (missedList[i].competitors.length*3)
             for (const competitor of missedList[i].competitors) {
               competitors[competitor]++
             }
@@ -81,7 +82,7 @@
         </tbody>
       </table>
       <div>
-        <h3>Valor total: <%= amount %></h1>
+        <h3>Valor total: R$ <%= amount %></h1>
       </div>
     </div>
     <footer>
